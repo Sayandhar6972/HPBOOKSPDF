@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.A.I World| Join</title>
+    <link rel="stylesheet" href="static/join.css">
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            <ul>
+                <li>
+                    <label for="Name">Name:</label>
+                    <input type="text" name="name" id="name"  required>
+                </li>
+                
+                <li>
+                    <label for="email">Email id:</label>
+                    <input type="email" name="email" id="email"  required>
+                </li>
+                
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" name="pass1" id="pass1"  required>
+                </li>
+                
+                <li>
+                    <label for="copassword">Confirm Password:</label>
+                    <input type="password" name="pass2" id="pass2"  required>
+                </li>
+                
+                <li>
+                    <label for="T&C">Terms and Conditions</label>
+                    <input type="checkbox" name="t&c" id="t&c" required>
+                </li>
+                
+                <li>
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </li>
+                
+                <a href="login" style="color: white;">Already have an account?</a>
+            </ul>
+
+            
+        </form>
+        
+    </div>
+</body>
+
+</html>

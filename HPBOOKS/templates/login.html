@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.A.I World | LogIn</title>
+    <link rel="stylesheet" href="static/login.css">
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Log In Page</h1>
+        <h3 style="color:white; text-align: center;">{{blog}}</h3>
+        <form method="post" action="login">
+            {% csrf_token %}
+            <ul>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" name="password3" id="password3" required>
+                </li>
+                <li>
+                    <button class="button">Login</button>
+                    <button class="button">Cancel</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
